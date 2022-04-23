@@ -1,0 +1,13 @@
+.footer-section {
+    background-color: var(--russet-clr);
+    color: var(--light-khaki);
+}
+
+.footer-content {
+    display: grid;
+    place-items: center;
+}
+
+.footer-content p {
+    padding: 10px 0;
+}
