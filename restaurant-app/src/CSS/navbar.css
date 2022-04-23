@@ -33,7 +33,7 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--russet-clr);
+    /* background: var(--russet-clr); */
 }
 
 .logo-container {
@@ -41,8 +41,12 @@ ul{
 }
 
 .logo-name {
-    font-size: 1.5vw;
-    color: var(--light-khaki);
+    font-size: 2.5vw;
+    /* color: var(--cyan-drk); */
+    color: #fff;
+    font-family: var(--merienda-fnt);
+    font-weight: 700;
+
 }
 
 .nav-container {
@@ -58,10 +62,10 @@ ul{
 }
 
 .menu-nav__link {
-    color: var(--light-khaki);
+    color: var(--rich-black);
 }
 
 .menu-nav__link:hover {
-    color: #fff;
+    color: var(--russet-clr);
     transition: 0.6s ease;
 }

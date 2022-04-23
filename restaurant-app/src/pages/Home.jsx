@@ -1,10 +1,13 @@
 import React from 'react';
+import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 
 
 const Home = () => {
     return ( 
-        <div className="App">
-            <h1>Side Hustle Restaurant Website</h1>
+        <div>
+            <Hero />
+            <Footer />
         </div>
      );
 }
