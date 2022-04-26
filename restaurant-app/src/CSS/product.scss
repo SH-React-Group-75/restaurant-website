@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+@import "./mixins.scss";
+.wrapper {
+  font-family: "Sen", sans-serif;
+  .product-wrapper {
+    padding-top: 100px;
+    .text {
+      text-align: center;
+      font-size: 3rem;
+    }
+    .product-container {
+      .lists {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        .list-items {
+          padding: 10px 60px;
+          color: #c59d5f;
+          font-size: 1.3rem;
+          letter-spacing: 1px;
+          @include mobile{
+              padding: 0;
+              margin-right: 10px;
+          }
+          &:hover {
+            background-color: #c59d5f;
+            color: white;
+            padding: 2px 20px;
+          }
+          &.active {
+            border-bottom: 2px solid #617d98;
+            &:hover {
+              background-color: white;
+              color: #c59d5f;
+            }
+          }
+        }
+      }
+      .container-fluid {
+        background-color: white;
+        padding: 30px 150px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 40px;
+        row-gap: 40px;
+        margin-top: 20px;
+        @include tablets {
+          grid-template-columns: auto auto;
+          padding: 30px 100px;
+        }
+        @include mobile {
+          grid-template-columns: auto;
+          padding: 30px 30px;
+        }
+        .menu-container {
+          text-align: center;
+          .menu-container-img {
+            position: relative;
+            &:hover{
+              transform: scaleX(1.1);
+            }
+            img {
+              border: 5px solid #c59d5f;
+              width: 100%;
+              height: 200px;
+              object-fit: cover;
+            }
+            p {
+              position: absolute;
+              top: -20px;
+              left: 20%;
+              width: 60%;
+              height: 60px;
+              background-color: #c59d5f;
+              color: white;
+              padding: 15px 0;
+              font-size: 1.3rem;
+              font-weight: 600;
+
+              @include mobile{
+                  width: 80%;
+                  left: 10%;
+              }
+            }
+          }
+          .menu-container-info {
+            padding: 10px 15px;
+            .menu-container-info-title {
+              h4 {
+                margin: 1em 0;
+              }
+            }
+            .btn {
+              padding: 15px 60px;
+              border: none;
+              outline: none;
+              border-radius: 8px;
+              font-size: 1rem;
+
+              &:hover{
+                  background-color: #c59d5f;
+                  color: white;
+                  cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
