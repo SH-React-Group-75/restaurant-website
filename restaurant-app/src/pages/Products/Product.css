@@ -1,0 +1,59 @@
+.productBody {
+    background-color: rgba(150, 100, 150, 0.5);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.productIntro {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-style: italic;
+}
+
+.productinfo {
+    font-size: 18px;
+    word-spacing: 5px;
+    word-wrap: break-word;
+    text-align: center;
+    position: relative;
+    top: 120px;
+    
+}
+
+.productIntro {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    font-style: italic;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+
+.card .cardBox {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.card .cardBox .cardImage {
+    border-radius: 5px;
+}
+
+.card .cardBox p {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.card .cardBox button {
+    margin-left: 20%;
+    width: 150px;
+    height: 30px;
+}
