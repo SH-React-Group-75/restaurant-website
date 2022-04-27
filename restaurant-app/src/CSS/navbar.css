@@ -60,6 +60,13 @@ ul{
 .hamburger-btn {
     margin-right: 2.5em;
     color: #fff;
+    display: none;
+}
+
+@media (max-width: 960px) {
+    .hamburger-btn {
+        display: block;
+    }
 }
 
 
