@@ -36,7 +36,7 @@ function Product({ selected, setSelected }) {
           return (
             <div className="menu-container" key={id}>
               <div className="menu-container-img">
-                <img src={img} alt="" />
+                <img src={img} alt={name} />
                 <p>{name}</p>
               </div>
               <div className="menu-container-info">

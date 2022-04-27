@@ -30,7 +30,10 @@ const Navbar = () => {
   return (
     <div className="navbar-section">
       <div className="logo-container">
-        <h1 className="logo-name">Cap75-Eatery</h1>
+        <Link to= '/'>
+            <h1 className="logo-name">Cap75-Eatery</h1>
+        </Link>
+      
       </div>
 
       {/* hamburger button */}

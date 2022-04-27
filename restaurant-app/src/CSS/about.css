@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap");
+
 /* general styles */
 :root {
     /* #854d27, #dd7230, #f4c95d, #e7e393, #04030f; */
@@ -26,6 +28,7 @@ div,h1,h4{
     font-weight: normal;
 }
 .main{
+    font-family: "Sen", sans-serif;
     background-color: #ffffff;
     /* opacity: 1; */
     background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 40px ), repeating-linear-gradient( #fffcf955, #fffcf9 );
@@ -46,7 +49,7 @@ div,h1,h4{
 
 .textbody{
     /* background-color: #fefeff; */
-    margin-top: 90px;
+    padding-top: 70px;
     display: flex;
     padding-left: 10%;
     padding-right: 10%;
@@ -61,6 +64,7 @@ img {
     border-style: none;
     width: 400px;
     height: 500px;
+    object-fit: cover;
 
 }
 
@@ -84,10 +88,11 @@ img {
 
 .text{
     text-align: justify;
-    margin-left: 70px;
+    margin-left: 30px;
    }
 
 h1{
+    font-size: 2.8rem;
     font-weight: bold;
 }
 
