@@ -50,6 +50,9 @@
           grid-template-columns: auto auto;
           padding: 30px 100px;
         }
+          @include tab{
+          padding: 30px 70px;
+        }
         @include mobile {
           grid-template-columns: auto;
           padding: 30px 30px;

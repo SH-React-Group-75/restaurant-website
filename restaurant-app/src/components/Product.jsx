@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { food, drinks, desserts } from "./data";
-import lists from './productCategory'
+import { food, drinks, desserts } from "../data";
+import lists from '../productCategory'
 
 function Product({ selected, setSelected }) {
   const [menus, setMenus] = useState([])
