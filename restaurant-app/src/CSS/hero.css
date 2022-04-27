@@ -1,8 +1,8 @@
 .hero-section {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.979)), url('../assets/pizza-bg.jpg');
-    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 95vh;
+    height: calc(100vh + 70px);
 }
 
 @media (max-width: 960px) {
