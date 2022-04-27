@@ -106,7 +106,7 @@ ul{
 }
 
 .menu-nav__link {
-    color: var(--rich-black);
+    color: #fff;
 }
 
 .menu-nav__link:hover {
