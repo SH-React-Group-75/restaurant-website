@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import '../CSS/navbar.css';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHamburger, faTimes } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from "react";
+import "../CSS/navbar.css";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHamburger, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   // setting the initial value of click to false(not clicked)
@@ -17,8 +17,8 @@ const Navbar = () => {
   const closeMobileMenu = () => setClick(false);
 
   // if escape key is pressed
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
       closeMobileMenu();
     }
   });
@@ -30,7 +30,9 @@ const Navbar = () => {
   return (
     <div className="navbar-section">
       <div className="logo-container">
-        <h1 className="logo-name">Cap75-Eatery</h1>
+        <Link to="/">
+          <h1 className="logo-name">Cap75-Eatery</h1>
+        </Link>
       </div>
 
       {/* hamburger button */}
@@ -43,7 +45,7 @@ const Navbar = () => {
       </div>
 
       {/* navigation */}
-      <nav className={click ? 'nav-container active' : 'nav-container'}>
+      <nav className={click ? "nav-container active" : "nav-container"}>
         <ul className="menu-nav">
           <li className="menu-nav__item">
             <Link to="/" onClick={closeMobileMenu} className="menu-nav__link">

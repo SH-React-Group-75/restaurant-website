@@ -39,6 +39,12 @@ ul{
     background-color: whitesmoke;
 }
 
+@media (min-width: 996px) {
+    .hamburger-btn{
+        display: none
+    }
+}
+
 @media (max-width: 960px) {
     .navbar-section {
         background: var(--russet-clr);
@@ -98,6 +104,7 @@ ul{
     .menu-nav {
         flex-direction: column;
         align-items: center;
+        transition: all 1s ease;
     }
 }
 
@@ -106,12 +113,13 @@ ul{
 }
 
 .menu-nav__link {
-    color: #fff;
+    color: black;
+        font-size: 1rem;
+    font-weight: 600;
 }
 
 .menu-nav__link:hover {
-    color: var(--orange);
-    transition: 0.6s ease;
+    color: var(--grain-yellow);
 }
 
 @media (max-width: 960px) {
