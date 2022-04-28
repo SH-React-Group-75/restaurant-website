@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { food, drinks, desserts } from "../data";
-import lists from '../productCategory'
+import lists from "../productCategory";
 
 function Product({ selected, setSelected }) {
-  const [menus, setMenus] = useState([])
+  const [menus, setMenus] = useState([]);
   useEffect(() => {
     switch (selected) {
       case 1:
@@ -18,16 +18,22 @@ function Product({ selected, setSelected }) {
       default:
         break;
     }
-
-  }, [selected])
-
+  }, [selected]);
 
   return (
     <div className="product-container">
       <ul className="lists">
         {lists.map((list) => {
           const { id, name } = list;
-          return <li className={selected === id ? 'list-items active' : 'list-items' } key={id} onClick={() => setSelected(id)}>{name}</li>;
+          return (
+            <li
+              className={selected === id ? "list-items active" : "list-items"}
+              key={id}
+              onClick={() => setSelected(id)}
+            >
+              {name}
+            </li>
+          );
         })}
       </ul>
       <div className="container-fluid">
@@ -36,7 +42,7 @@ function Product({ selected, setSelected }) {
           return (
             <div className="menu-container" key={id}>
               <div className="menu-container-img">
-                <img src={img} alt={name} />
+                <img src={img} alt={name} className="image" />
                 <p>{name}</p>
               </div>
               <div className="menu-container-info">
@@ -47,12 +53,11 @@ function Product({ selected, setSelected }) {
                 <button className="btn"> Add To Cart </button>
               </div>
             </div>
-          )
-         })}
-            </div>
+          );
+        })}
+      </div>
     </div>
-
-      )
+  );
 }
 
-      export default Product;
+export default Product;
